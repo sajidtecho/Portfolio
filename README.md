@@ -1,6 +1,4 @@
-# 3D Animated AI/ML Engineer Portfolio
-
-A modern, immersive, and fully responsive 3D portfolio website built with cutting-edge web technologies.
+# A modern, immersive, and fully responsive 3D portfolio website built with cutting-edge web technologies.
 
 ## Features
 - **3D Animations & Elements:** Built with Three.js via react-three-fiber and react-three-drei.
