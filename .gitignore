@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+00_VISUAL_SUMMARY.md
+00_SUMMARY.md
+00_SUMMARY.md.bak
+3D_PORTFOLIO.md
+README.md
+ARCHITECTURE.md
+CHANGELOG.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
