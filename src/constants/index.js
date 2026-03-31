@@ -135,7 +135,7 @@ export const projects = [
       { name: "python", color: "text-yellow-500" },
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    source_code_link: "https://github.com/sajidtecho",
+    source_code_link: "https://github.com/sajidtecho/Aadhaar-Enrolment-Demographic-Biometric-Analytics-and-Forecasting",
     demo_link: "",
   },
   {
@@ -147,7 +147,7 @@ export const projects = [
       { name: "data-science", color: "text-green-500" },
     ],
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
-    source_code_link: "https://github.com/sajidtecho",
+    source_code_link: "https://github.com/sajidtecho/Insurance-Dashboard-Streamlit-App",
     demo_link: "",
   },
 ];
