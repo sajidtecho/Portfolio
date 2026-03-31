@@ -16,7 +16,7 @@ const App = () => {
     <div className="relative z-0 bg-bg-dark overflow-x-hidden w-full">
       <CustomCursor />
       <div className="relative z-0">
-        {/* Dynamic Background */}
+        { }
         <StarsCanvas />
         <Navbar />
         <Hero />
