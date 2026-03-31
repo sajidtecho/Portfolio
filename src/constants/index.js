@@ -111,7 +111,7 @@ export const projects = [
     ],
     image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1000",
     source_code_link: "https://github.com/sajidtecho/Drivix",
-    demo_link: "https://drivix-five.vercel.app",
+    demo_link: "https://drivix-three.vercel.app",
   },
   {
     name: "InternSathi (SIH) - Recommendation System",
