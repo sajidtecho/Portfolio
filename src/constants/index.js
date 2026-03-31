@@ -104,6 +104,19 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "Drivix: Smart Parking Ecosystem",
+    description: "A high-performance urban mobility solution featuring ticketless automated entry using number plate recognition, real-time occupancy tracking, and a frictionless digital wallet for automatic session billing. Built with a premium glassmorphic UI.",
+    tags: [
+      { name: "React", color: "text-cyan-400" },
+      { name: "Firebase", color: "text-orange-500" },
+      { name: "Tailwind CSS", color: "text-blue-400" },
+      { name: "Framer Motion", color: "text-purple-500" }
+    ],
+    image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1000",
+    source_code_link: "https://github.com/sajidtecho/Drivix",
+    demo_link: "https://drivix-five.vercel.app",
+  },
+  {
     name: "InternSathi (SIH) - Recommendation System",
     description: "Intelligent Internship Allocation and Recommendation System for the Prime Minister Internship Scheme. Built an allocation engine matching 10,000+ students to internships using multi-criteria scoring. Added fairness algorithms reducing bias by 30%.",
     tags: [
@@ -141,3 +154,4 @@ export const projects = [
     demo_link: "",
   },
 ];
+
