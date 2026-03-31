@@ -123,7 +123,7 @@ export const projects = [
       { name: "sql", color: "text-green-500" }
     ],
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000",
-    source_code_link: "https://github.com/sajidtecho",
+    source_code_link: "https://github.com/sajidtecho/Internsetu--Smart-internship-recommendation-Engine-Prime-Minister-Internship-Scheme-",
     demo_link: "",
   },
   {
