@@ -30,11 +30,11 @@ const App = () => {
           <Contact />
         </div>
       </div>
-      
+
       {/* Footer */}
       <footer className="text-center py-6 text-gray-500 relative z-10 border-t border-gray-800">
         <p>© {new Date().getFullYear()} Sajid Ahmad. All rights reserved.</p>
-        <p className="text-sm mt-1">Built with React, Three.js & Tailwind CSS.</p>
+        <p className="text-sm mt-1">Built with ❤️ by Sajid Ahmad.</p>
       </footer>
     </div>
   );
