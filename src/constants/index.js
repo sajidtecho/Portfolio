@@ -155,3 +155,18 @@ export const projects = [
   },
 ];
 
+export const socialLinks = [
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/sajid-ahmad-er",
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/sajidtecho",
+  },
+  {
+    name: "Kaggle",
+    url: "https://www.kaggle.com/wajidaliahmad",
+  },
+];
+

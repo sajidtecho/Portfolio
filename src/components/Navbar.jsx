@@ -68,6 +68,16 @@ const Navbar = () => {
               Resume
             </motion.a>
           </li>
+
+          {/* Social Icons */}
+          <li className="flex flex-row gap-4 ml-2 border-l border-gray-700 pl-6">
+            <a href="https://github.com/sajidtecho" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors hover-target">
+              <span className="text-[14px] font-semibold">GitHub</span>
+            </a>
+            <a href="https://www.kaggle.com/wajidaliahmad" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors hover-target">
+              <span className="text-[14px] font-semibold">Kaggle</span>
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -113,6 +123,12 @@ const Navbar = () => {
                   <Download size={18} />
                   Download Resume
                 </motion.a>
+              </li>
+
+              {/* Social Icons for Mobile */}
+              <li className="w-full flex justify-center gap-6 pt-4">
+                <a href="https://github.com/sajidtecho" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-brand transition-colors text-sm font-semibold">GitHub</a>
+                <a href="https://www.kaggle.com/wajidaliahmad" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-brand transition-colors text-sm font-semibold">Kaggle</a>
               </li>
             </ul>
           </motion.div>

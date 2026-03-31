@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,11 +16,19 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const { name, email, message } = form;
+    const subject = `New message from ${name} (${email})`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const mailtoUrl = `mailto:sajidahmadgpt@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open user's email client
+    window.location.href = mailtoUrl;
+
     setTimeout(() => {
       setLoading(false);
-      alert("Thank you. I will get back to you as soon as possible.");
+      alert("Opening your email client to send the message. Thank you!");
       setForm({ name: "", email: "", message: "" });
-    }, 1500);
+    }, 1000);
   };
 
   return (
@@ -43,6 +51,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                required
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
@@ -54,6 +63,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                required
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your valid email address?"
@@ -65,6 +75,7 @@ const Contact = () => {
               <textarea
                 rows={4}
                 name="message"
+                required
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What you want to say?"
@@ -76,7 +87,7 @@ const Contact = () => {
               type="submit"
               className="mt-2 bg-brand py-2 px-6 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-brand hover:bg-brand/80 transition-all text-sm hover-target"
             >
-              {loading ? "Sending..." : "Send"}
+              {loading ? "Preparing..." : "Send via Email"}
             </button>
           </form>
         </motion.div>
@@ -96,9 +107,16 @@ const Contact = () => {
              <p className="max-w-xs leading-relaxed text-[14px]">
                 Ready to turn your ideas into functional, beautiful realities? Send me a message, and let's craft something amazing together.
              </p>
-             <div className="mt-6 flex gap-4">
-               <a href="https://linkedin.com/in/sajid-ahmad-er" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors text-xl hover-target">in</a>
-               <a href="https://github.com/sajidtecho" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors text-xl hover-target">GH</a>
+             <div className="mt-6 flex gap-6 items-center">
+               <a href="https://linkedin.com/in/sajid-ahmad-er" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors text-xl hover-target flex items-center gap-1">
+                 <span className="text-sm font-semibold">LinkedIn</span>
+               </a>
+               <a href="https://github.com/sajidtecho" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors text-xl hover-target flex items-center gap-1">
+                 <span className="text-sm font-semibold">GitHub</span>
+               </a>
+               <a href="https://www.kaggle.com/wajidaliahmad" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors text-xl hover-target flex items-center gap-1 border-l border-gray-700 pl-6">
+                 <span className="text-sm font-semibold">Kaggle</span>
+               </a>
              </div>
           </div>
         </motion.div>
