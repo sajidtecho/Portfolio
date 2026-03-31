@@ -25,9 +25,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center py-4 fixed top-0 z-40 transition-all duration-300 ${
-        scrolled ? "bg-bg-dark/80 backdrop-blur-md shadow-brand/10 shadow-lg" : "bg-transparent"
-      }`}
+      className={`w-full flex items-center py-4 fixed top-0 z-40 transition-all duration-300 ${scrolled ? "bg-bg-dark/80 backdrop-blur-md shadow-brand/10 shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-6 lg:px-12">
         <a
@@ -47,20 +46,20 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? "text-brand" : "text-gray-300"
-              } hover:text-white text-[18px] font-medium cursor-pointer transition-colors hover-target`}
+              className={`${active === nav.title ? "text-brand" : "text-gray-300"
+                } hover:text-white text-[18px] font-medium cursor-pointer transition-colors hover-target`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          
+
           {/* Resume Download Button */}
           <li>
             <motion.a
-              href="/Sajid_Ahmad.pdf"
-              download="Sajid_Ahmad_Resume.pdf"
+              href="https://drive.google.com/drive/u/0/folders/1rZNsPvTU2s1gDjQWTMfmGZf3zezxh4Ns"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-brand text-white font-semibold hover:bg-brand/90 transition-all shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] hover-target"
@@ -83,17 +82,15 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.95, y: -20 }}
             animate={{ opacity: toggle ? 1 : 0, scale: toggle ? 1 : 0.95, y: toggle ? 0 : -20 }}
             transition={{ duration: 0.2 }}
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 bg-surface absolute top-16 right-4 mx-4 my-2 min-w-[140px] z-50 rounded-xl shadow-xl`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 bg-surface absolute top-16 right-4 mx-4 my-2 min-w-[140px] z-50 rounded-xl shadow-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-brand" : "text-gray-300"
-                  }`}
+                  className={`font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-brand" : "text-gray-300"
+                    }`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
@@ -102,7 +99,7 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              
+
               {/* Resume Button for Mobile */}
               <li className="w-full pt-2 border-t border-gray-700 mt-2">
                 <motion.a
