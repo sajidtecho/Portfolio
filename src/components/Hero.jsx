@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative w-full h-screen mx-auto overflow-hidden">
       <div className="absolute inset-0 top-[120px] max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-start justify-between z-10">
-        <div className="flex flex-col justify-center h-full md:w-3/5 mt-[-60px]">
+        <div className="flex flex-col justify-center h-full md:w-3/5 mt-[-60px] relative z-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const Hero = () => {
               Skilled in AI/ML, data analytics, and scalable systems development. Passionate about applying machine learning to solve real-world fintech and security challenges.
             </p>
 
-            <div className="mt-8 flex gap-4">
+            <div className="mt-8 flex gap-4 relative z-30">
               <a href="#projects" className="py-3 px-8 rounded-full bg-brand text-white font-medium hover:bg-brand/80 transition-all hover:scale-105 shadow-[0_0_20px_rgba(168,85,247,0.4)] hover-target">
                 View Projects
               </a>
