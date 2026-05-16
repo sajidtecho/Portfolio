@@ -13,6 +13,23 @@ export const education = [
     points: [
       "Relevant Coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, Artificial Intelligence, Machine Learning."
     ]
+  },
+  {
+    title: "Intermediate In Science",
+    institution: "College of Commerce Arts and Science Patna",
+    date: "March 2020 - Feb. 2022",
+    points: [
+      "Completed Senior Secondary Education with a focus on Science subjects."
+    ]
+  },
+  {
+    title: "Secondary School Education (1st - 10th)",
+    institution: "H.S DAV Public School Narkatiaganj",
+    date: "2008 - 2019",
+    points: [
+      "Served as Vice Head Boy (2018) and Head Boy (2019).",
+      "Managed student activities and represented the student body."
+    ]
   }
 ];
 
@@ -65,6 +82,20 @@ export const technicalSkills = [
   {
     category: "FinTech-Relevant Skills",
     skills: ["System Design", "Data Pipelines", "Fraud Detection", "ML Algorithms"]
+  }
+];
+
+export const internships = [
+  {
+    title: "Software Engineer",
+    company_name: "RoziHub Pvt Ltd New Delhi",
+    icon: "work",
+    date: "2024 - Present",
+    points: [
+      "Contributing to software development projects and collaborating with the engineering team.",
+      "Assisting in the design and implementation of new features and functionalities.",
+      "Participating in code reviews and debugging sessions to improve software quality."
+    ],
   }
 ];
 
