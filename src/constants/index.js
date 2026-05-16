@@ -85,6 +85,8 @@ export const technicalSkills = [
   }
 ];
 
+import offerLetter from "../assets/Offer Letter.pdf";
+
 export const internships = [
   {
     title: "Software Engineer",
@@ -96,6 +98,7 @@ export const internships = [
       "Assisting in the design and implementation of new features and functionalities.",
       "Participating in code reviews and debugging sessions to improve software quality."
     ],
+    link: offerLetter,
   }
 ];
 

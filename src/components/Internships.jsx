@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { internships } from "../constants";
 import { textVariant } from "../utils/motion";
 
+import { ExternalLink } from "lucide-react";
+
 const InternshipCard = ({ internship, index }) => {
   return (
     <motion.div 
@@ -20,6 +22,17 @@ const InternshipCard = ({ internship, index }) => {
       <div className="bg-surface/80 border border-gray-800 p-8 rounded-2xl relative z-10 flex-1 flex flex-col hover:border-brand/50 transition-colors backdrop-blur-md">
         <div className="flex justify-between items-start mb-2">
            <span className="text-brand text-[14px] font-bold bg-brand/10 px-3 py-1 rounded-full">{internship.date}</span>
+           {internship.link && (
+             <a 
+               href={internship.link} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="text-gray-400 hover:text-brand transition-colors p-1"
+               title="View Offer Letter"
+             >
+               <ExternalLink size={18} />
+             </a>
+           )}
         </div>
         
         <h3 className="text-white text-[22px] font-bold leading-tight mt-2">{internship.title}</h3>
@@ -32,6 +45,20 @@ const InternshipCard = ({ internship, index }) => {
             </li>
           ))}
         </ul>
+
+        {internship.link && (
+          <div className="mt-6 pt-6 border-t border-gray-800">
+            <a 
+              href={internship.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-brand/10 border border-brand/20 text-brand font-semibold hover:bg-brand hover:text-white transition-all group"
+            >
+              <span>View Offer Letter</span>
+              <ExternalLink size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+          </div>
+        )}
       </div>
     </motion.div>
   );
