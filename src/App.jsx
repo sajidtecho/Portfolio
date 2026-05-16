@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Internships from "./components/Internships";
 import CustomCursor from "./components/CustomCursor";
 import StarsCanvas from "./components/canvas/Stars";
 
@@ -22,6 +23,7 @@ const App = () => {
         <Hero />
         <About />
         <Education />
+        <Internships />
         <Skills />
         <Projects />
         <Certifications />
